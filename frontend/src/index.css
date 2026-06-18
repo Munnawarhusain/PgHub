@@ -1,0 +1,12 @@
+@import "tailwindcss";
+
+/* Controls how many image cards are visible per breakpoint.
+   The overflow-hidden on the parent clips the rest of the track.
+   We achieve N-visible-cards by setting the container to show
+   exactly 1/N of the full track width via CSS custom properties. */
+
+.slider-wrapper {
+  --cards-mobile: 1;
+  --cards-tablet: 2;
+  --cards-desktop: 3;
+}
